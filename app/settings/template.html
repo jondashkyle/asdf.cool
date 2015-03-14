@@ -1,0 +1,74 @@
+<div>
+  <div class="container-settings-header" data-settings-header>
+    Editing mode
+    <span>(click a link to edit)</span>
+    <div class="container-settings-close" data-settings-close>&times;</div>
+  </div>
+  <div class="container-settings" data-container-settings>
+    <div class="container-settings-row">
+      <div class="container-settings-big">
+        <div data-color-container="dark">
+          <input id="settings-color-dark" type="radio" name="color" value="dark" />
+          <label for="settings-color-dark">Make it night</label>
+        </div>
+        <div data-color-container="light">
+          <input id="settings-color-light" type="radio" name="color" value="light" checked />
+          <label for="settings-color-light">Make it day</label>
+        </div>
+      </div>
+      <div class="container-settings-small">
+        <div class="container-settings-link" data-source-show>Export</div>
+      </div>
+      <div class="container-settings-small">
+        <div class="container-settings-link" data-source-import>Import</div>
+      </div>
+      <!--
+      <div class="container-settings-small">
+        <div class="container-settings-link">Clear times</div>
+      </div>
+      -->
+      <div class="container-settings-small">
+        <div class="container-settings-link" data-reset-links>Reset links</div>
+      </div>
+      <div class="container-settings-small">
+        <div class="container-settings-link">About</div>
+      </div>
+    </div>
+    <div class="container-settings-row">
+    <div class="container-settings-small">
+        <input id="settings-columns" type="checkbox" name="columns">
+        <label for="settings-columns">Columns</label>
+      </div>
+
+      <div class="container-settings-big" data-col-width-range>
+        <input id="settings-col-width" name="colWidth" type="range" min="100" max="800">
+        <label class="range-title" for="settings-col-width">Column width</label>
+      </div>
+      <div class="container-settings-big">
+        <div class="container-settings-split">
+          <div>
+            <label for="settings-font">Font</label>
+          </div>
+          <div>
+            <input id="settings-font" name="font" type="text" value="Bau-Medium" class="sans-serif" autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-settings-row">
+      <div class="container-settings-big">
+        <input id="settings-zoom" name="zoom" type="range" min="20" max="100">
+        <label class="range-title" for="settings-zoom">Type size</label>
+      </div>
+
+      <div class="container-settings-big">
+        <input id="settings-padding" name="padding" type="range" min="0" max="100" step"0.1">
+        <label class="range-title" for="settings-padding">Margin size</label>
+      </div>
+    </div>
+  </div>
+  <div class="container-settings-source">
+    <div class="container-settings-source-close" data-source-hide>&times;</div>
+    <textarea name="source" id="source"></textarea>
+  </div>
+</div>

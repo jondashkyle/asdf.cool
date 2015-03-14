@@ -1,0 +1,144 @@
+.container-panel {
+  color: #fff;
+  display: none;
+  position: fixed;
+  font-size: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 19;
+}
+
+[data-panel-open],
+[data-panel-close],
+[data-panel-toggle] {
+  cursor: pointer;
+}
+
+.content-panel {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.options-panel {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  position: relative;
+}
+
+.options-panel:before {
+  content: '';
+  border: 10px solid rgba(127, 127, 127, 0.5);
+  border-radius: 15px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.options-panel .bttn-submit {
+  border-bottom-left-radius: 10px;
+}
+
+.options-panel .bttn-cancel {
+  border-bottom-right-radius: 10px;
+}
+
+.inpt {
+  display: block;
+}
+
+.inpt.inpt-big {
+  background: #fff;
+  flex: 1 0 100%;
+  color: #000;
+  outline: 0;
+  font-size: 1em;
+  border: none;
+  padding: 20px 30px 20px;
+  margin: 0;
+}
+
+.bttn {
+  cursor: pointer;
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  border: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.bttn-big {
+  text-align: center;
+  font-size: 0.75em;
+  flex: 1;
+  padding: 20px 5px 20px;
+}
+
+.inpt-pair {
+  display: flex;
+  display: none;
+}
+
+.inpt-pair > label.inpt {
+  flex: 1;
+}
+
+.inpt-pair > [type="text"].inpt {
+  flex: 2;
+}
+
+.options-panel .bttn-submit {
+  flex: 2;
+}
+
+.options-panel [name="title"] {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.options-panel input[type="text"] {
+  border-bottom: 1px solid #eee;
+}
+
+.options-panel input[name="url"] {
+  border-bottom: 0;
+}
+
+.options-panel input[name="tags"] {
+  display: none;
+  border-bottom: 0;
+}
+
+.options-panel .bttn-submit {
+  background: #09f;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+
+.options-panel .bttn-remove {
+  background: #f33;
+  color: #fff;
+  border-right: 1px solid #fff;
+  display: none;
+}
+
+.options-panel-edit .bttn-remove {
+  display: block;
+}
+
+.options-panel .bttn-cancel {
+  background: #808080;
+  color: #fff;
+}

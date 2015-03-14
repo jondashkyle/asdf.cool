@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 2015-03-13:v9
+
+CACHE:
+index.html
+assets/bundle.css
+assets/bundle.js
+
+NETWORK:
+*
