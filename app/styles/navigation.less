@@ -3,8 +3,8 @@ nav {
   color: #808080;
   line-height: 1;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   font-size: 36px;
   padding: 10px 15px;
   z-index: 99999;
@@ -13,10 +13,46 @@ nav {
 nav > div {
   opacity: 0.5;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px 20px;
   transition: 250ms ease opacity;
 }
 
 nav > div:hover {
   opacity: 1;
+}
+
+nav [data-view="panel"] {
+  height: 20px;
+  width: 20px;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background: #808080;
+    position: absolute;
+    margin: 12px 10px;
+  }
+
+  &:before {
+    height: 20px;
+    width: 4px;
+    top: 0;
+    left: 8px;
+  }
+
+  &:after {
+    top: 8px;
+    left: 0;
+    height: 4px;
+    width: 20px;
+  }
+}
+
+nav [data-view="settings"] {
+  background: url(cog.svg) no-repeat center;
+  background-size: contain;
+  padding: 0;
+  height: 24px;
+  width: 24px;
 }

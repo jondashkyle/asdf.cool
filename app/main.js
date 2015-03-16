@@ -152,6 +152,7 @@ window.addEventListener('load', function() {
   settings.refresh(db.get('settings'))
   settings.start()
   checkEmpty()
+  $('body').css('visibility', 'visible')
 })
 
 $('body').on('click', '[data-edit][data-id]', function() {

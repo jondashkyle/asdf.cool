@@ -119,7 +119,6 @@ exports.getLink = function(id) {
 }
 
 exports.isEmpty = function () {
-  console.log(data)
   if (data.length > 0) {
     return false
   } else {

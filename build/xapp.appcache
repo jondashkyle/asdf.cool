@@ -1,10 +1,14 @@
 CACHE MANIFEST
-# 2015-03-13:v9
+# 2015-03-14:v1
 
 CACHE:
 index.html
 assets/bundle.css
 assets/bundle.js
+assets/fonts/2DA476_0_0.eot
+assets/fonts/2DA476_0_0.ttf
+assets/fonts/2DA476_0_0.woff
+assets/fonts/2DA476_0_0.woff2
 
 NETWORK:
 *
